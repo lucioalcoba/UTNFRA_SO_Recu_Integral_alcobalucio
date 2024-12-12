@@ -1,0 +1,2 @@
+CPU Modelo:  AMD Ryzen 7 5700G with Radeon Graphics 
+Frecuencia:  3799.890

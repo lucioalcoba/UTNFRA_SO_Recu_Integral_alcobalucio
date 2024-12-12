@@ -1,0 +1,37 @@
+2024-12-12 02:23:05,740 p=8334 u=lucioalco n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-12-12 02:23:05,909 p=8334 u=lucioalco n=ansible | PLAY [Playbook para crear el archivo de datos] ***********************************************************************************************************************************************
+2024-12-12 02:23:05,918 p=8334 u=lucioalco n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-12-12 02:23:07,068 p=8334 u=lucioalco n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning
+of that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2024-12-12 02:23:07,069 p=8334 u=lucioalco n=ansible | ok: [localhost]
+2024-12-12 02:23:07,073 p=8334 u=lucioalco n=ansible | TASK [2PRecuperatorio : Crear directorio para el archivo] ************************************************************************************************************************************
+2024-12-12 02:23:07,319 p=8334 u=lucioalco n=ansible | changed: [localhost]
+2024-12-12 02:23:07,325 p=8334 u=lucioalco n=ansible | TASK [2PRecuperatorio : Crear archivo con los datos requeridos] ******************************************************************************************************************************
+2024-12-12 02:23:07,725 p=8334 u=lucioalco n=ansible | changed: [localhost]
+2024-12-12 02:23:07,731 p=8334 u=lucioalco n=ansible | PLAY [Crear usuarios y asignar grupos] *******************************************************************************************************************************************************
+2024-12-12 02:23:07,737 p=8334 u=lucioalco n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-12-12 02:23:08,588 p=8334 u=lucioalco n=ansible | ok: [localhost]
+2024-12-12 02:23:08,592 p=8334 u=lucioalco n=ansible | TASK [Alta_Usuarios_Alcoba : Crear grupo GProfesores] ****************************************************************************************************************************************
+2024-12-12 02:23:08,845 p=8334 u=lucioalco n=ansible | changed: [localhost]
+2024-12-12 02:23:08,851 p=8334 u=lucioalco n=ansible | TASK [Alta_Usuarios_Alcoba : Crear grupo GAlumnos] *******************************************************************************************************************************************
+2024-12-12 02:23:09,021 p=8334 u=lucioalco n=ansible | changed: [localhost]
+2024-12-12 02:23:09,028 p=8334 u=lucioalco n=ansible | TASK [Alta_Usuarios_Alcoba : Crear usuario Profesor y agregarlo al grupo GProfesores] ********************************************************************************************************
+2024-12-12 02:23:09,339 p=8334 u=lucioalco n=ansible | changed: [localhost]
+2024-12-12 02:23:09,345 p=8334 u=lucioalco n=ansible | TASK [Alta_Usuarios_Alcoba : Crear usuario Alumno y agregarlo al grupo GAlumnos] *************************************************************************************************************
+2024-12-12 02:23:09,545 p=8334 u=lucioalco n=ansible | changed: [localhost]
+2024-12-12 02:23:09,551 p=8334 u=lucioalco n=ansible | PLAY [Configurar sudoers para GProfesores] ***************************************************************************************************************************************************
+2024-12-12 02:23:09,556 p=8334 u=lucioalco n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-12-12 02:23:10,393 p=8334 u=lucioalco n=ansible | ok: [localhost]
+2024-12-12 02:23:10,397 p=8334 u=lucioalco n=ansible | TASK [Sudoers_Alcoba : Permitir que el grupo GProfesores ejecute sudo sin contraseña] ********************************************************************************************************
+2024-12-12 02:23:10,662 p=8334 u=lucioalco n=ansible | changed: [localhost]
+2024-12-12 02:23:10,668 p=8334 u=lucioalco n=ansible | PLAY [Instalar herramientas necesarias] ******************************************************************************************************************************************************
+2024-12-12 02:23:10,675 p=8334 u=lucioalco n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-12-12 02:23:11,517 p=8334 u=lucioalco n=ansible | ok: [localhost]
+2024-12-12 02:23:11,521 p=8334 u=lucioalco n=ansible | TASK [Instala-tools_Alcoba : Actualizar el índice de paquetes] *******************************************************************************************************************************
+2024-12-12 02:23:18,272 p=8334 u=lucioalco n=ansible | changed: [localhost]
+2024-12-12 02:23:18,278 p=8334 u=lucioalco n=ansible | TASK [Instala-tools_Alcoba : Instalar paquetes requeridos] ***********************************************************************************************************************************
+2024-12-12 02:23:23,128 p=8334 u=lucioalco n=ansible | changed: [localhost]
+2024-12-12 02:23:23,134 p=8334 u=lucioalco n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2024-12-12 02:23:23,134 p=8334 u=lucioalco n=ansible | localhost                  : ok=13   changed=9    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
